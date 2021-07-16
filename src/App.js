@@ -1,6 +1,15 @@
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { Layout } from './components/index.js';
+
 function App() {
   return (
-    <p></p>
+    <Layout>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path='/'/>
+        </Switch>
+      </BrowserRouter>
+    </Layout>
   );
 }
 
