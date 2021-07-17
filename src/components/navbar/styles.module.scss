@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 0, 0, 0.2);
+  width: 100%;
+  height: 6em;
+}
+
+.navbar {
+  background: white;
+  width: 90%;
+  height: 6em;
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
