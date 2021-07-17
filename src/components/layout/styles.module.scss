@@ -8,7 +8,11 @@
 }
 
 .innerContainer {
-  width: 80%;
+  width: 90%;
   height: 100%;
   background: grey;
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
