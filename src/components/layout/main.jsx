@@ -1,9 +1,11 @@
-import styles from './main.scss';
+import styles from './styles.module.scss';
 
 const Layout = (props) => {
   return (
     <div className={styles.container}>
-      {props.children}
+      <div className={styles.innerContainer}>
+        {props.children}
+      </div>
     </div>
   )
 }
