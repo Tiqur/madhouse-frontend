@@ -1,3 +1,3 @@
-export * from 'home';
-export * from 'token';
-export * from 'channel';
+export {default as HomePage} from './home/main.jsx';
+export {default as TokenPage} from './token/main.jsx';
+export {default as ChannelPage} from './channel/main.jsx';
