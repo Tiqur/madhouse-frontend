@@ -36,13 +36,18 @@
     padding: 0.7em !important;
     border-radius: 6px;
     transition: 0.2s
-  } :hover {
+  } 
+
+  & :hover {
     background: #1A1E26;
     cursor: pointer;
     color: white !important;
   }
+
+
 }
 
 .logo {
   height: 3em;
+  filter: drop-shadow(3px 3px 2px #000000);
 }
