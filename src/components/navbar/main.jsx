@@ -19,7 +19,7 @@ const Navbar = () => {
         <Text size={4}>Madhouse</Text>
         <div className={styles.links_container}>
           <BrowserRouter>
-            <NavLink to='/about' text='About'/>
+            <NavLink to='/' text='Home'/>
             <NavLink to='/token' text='Token'/>
             <NavLink to='/channel' text='Channel'/>
             <NavLink to='/socials' text='Socials'/>
