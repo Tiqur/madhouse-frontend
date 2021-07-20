@@ -1,9 +1,11 @@
 import styles from './styles.module.scss';
-import { ReactComponent as DiscordIcon } from '../../assets/discord.svg';
-import { ReactComponent as RedditIcon } from '../../assets/reddit.svg';
-import { ReactComponent as TwitterIcon } from '../../assets/twitter.svg';
-import { ReactComponent as InstaIcon } from '../../assets/instagram.svg';
-import { ReactComponent as TelegramIcon } from '../../assets/telegram.svg';
+import {
+  DiscordSvg, 
+  InstaSvg, 
+  TelegramSvg,
+  RedditSvg,
+  TwitterSvg 
+} from '../../assets/index.js';
 
 const Icon = (props) => {
   return (
@@ -16,11 +18,11 @@ const Icon = (props) => {
 const Footer = () => {
   return (
     <div className={styles.container}>
-      <Icon icon={DiscordIcon} to=''/>
-      <Icon icon={RedditIcon} to=''/>
-      <Icon icon={TwitterIcon} to=''/>
-      <Icon icon={InstaIcon} to=''/>
-      <Icon icon={TelegramIcon} to=''/>
+      <Icon icon={DiscordSvg} to=''/>
+      <Icon icon={RedditSvg} to=''/>
+      <Icon icon={TwitterSvg} to=''/>
+      <Icon icon={InstaSvg} to=''/>
+      <Icon icon={TelegramSvg} to=''/>
     </div>
   )
 }

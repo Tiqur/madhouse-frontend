@@ -1,5 +1,5 @@
 import styles from './styles.module.scss';
-import logo from '../../assets/logo.png';
+import { LogoPng } from '../../assets/index.js';
 import { Text } from '../index.js';
 import { Link, BrowserRouter } from 'react-router-dom';
 
@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.navbar}>
-        <img src={logo} className={styles.logo} alt='logo'/>
+        <img src={LogoPng} className={styles.logo} alt='logo'/>
         <Text size={4}>Madhouse</Text>
         <div className={styles.links_container}>
           <BrowserRouter>
