@@ -13,7 +13,7 @@ const HomePage = () => {
           <Button primary style={{marginTop: '2em'}} text="Join the community" width='11em' height='4em'/>
         </div>
         <div className={styles.hero_content}>
-          <div className={styles.video_container}/>
+          <iframe width="512" height="288" src="https://www.youtube.com/embed/fylt8A_oL60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
