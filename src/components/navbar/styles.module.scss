@@ -31,6 +31,15 @@
   @media screen and (max-width: 1100px) {
     display: none;
   }
+
+  & * {
+    padding: 0.7em !important;
+    border-radius: 6px;
+  } :hover {
+    background: #1A1E26;
+    cursor: pointer;
+    color: white !important;
+  }
 }
 
 .logo {
