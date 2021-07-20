@@ -15,7 +15,9 @@
 
   // Mobile
   @media screen and (max-width: 1100px) {
-    height: 30em;
+    height: auto;
+    padding: 4em 0 4em 0;
+    justify-content: center;
   }
 }
 
@@ -36,9 +38,14 @@
   align-items: center;
   width: 50%;
   height: 100%;
+
+  // Mobile
+  @media screen and (max-width: 1100px) {
+    display: none;
+  }
 }
 
-.video_placeholder {
+.video_container {
   height: 19em;
   width: 32em;
   background: black;

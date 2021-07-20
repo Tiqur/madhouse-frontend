@@ -13,7 +13,7 @@ const HomePage = () => {
           <Button primary style={{marginTop: '2em'}} text="Join the community" width='11em' height='4em'/>
         </div>
         <div className={styles.hero_content}>
-          <div className={styles.video_placeholder}/>
+          <div className={styles.video_container}/>
         </div>
       </div>
     </div>
