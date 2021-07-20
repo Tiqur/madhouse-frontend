@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 10em;
+  width: 100%;
+  margin-top: 2em;
+}
+
+.icon {
+  height: 3em;
+  width: 3em;
+  margin: 0 1em 0 1em;
+}
