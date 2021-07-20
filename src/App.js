@@ -8,6 +8,10 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path='/' component={HomePage}/>
+          <Route exact path='/about' component={HomePage}/>
+          <Route exact path='/token' component={HomePage}/>
+          <Route exact path='/channel' component={HomePage}/>
+          <Route exact path='/socials' component={HomePage}/>
         </Switch>
       </BrowserRouter>
     </Layout>

@@ -1,7 +1,7 @@
 import styles from './styles.module.scss';
 import logo from '../../assets/logo.png';
 import { Text } from '../index.js';
-import { Link } from 'react-router-dom';
+import { Link, BrowserRouter } from 'react-router-dom';
 
 const NavLink = (props) => {
   return (
@@ -18,10 +18,12 @@ const Navbar = () => {
         <img src={logo} className={styles.logo} alt='logo'/>
         <Text size={4}>Madhouse</Text>
         <div className={styles.links_container}>
-          <NavLink to='/about' text='About'/>
-          <NavLink to='/token' text='Token'/>
-          <NavLink to='/channel' text='Channel'/>
-          <NavLink to='/socials' text='Socials'/>
+          <BrowserRouter>
+            <NavLink to='/about' text='About'/>
+            <NavLink to='/token' text='Token'/>
+            <NavLink to='/channel' text='Channel'/>
+            <NavLink to='/socials' text='Socials'/>
+          </BrowserRouter>
         </div>
       </div>
     </div>
