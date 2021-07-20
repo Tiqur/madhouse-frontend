@@ -1,6 +1,15 @@
 import styles from './styles.module.scss';
-import { Text } from '../index.js';
 import logo from '../../assets/logo.png';
+import { Text } from '../index.js';
+import { Link } from 'react-router-dom';
+
+const NavLink = (props) => {
+  return (
+    <Link to={{pathname: props.to}}>
+      <Text size={1.5}>{props.text}</Text>
+    </Link>
+  )
+}
 
 const Navbar = () => {
   return (
@@ -9,10 +18,10 @@ const Navbar = () => {
         <img src={logo} className={styles.logo} alt='logo'/>
         <Text size={4}>Madhouse</Text>
         <div className={styles.links_container}>
-          <Text size={1.5}>About</Text>
-          <Text size={1.5}>Token</Text>
-          <Text size={1.5}>Channel</Text>
-          <Text size={1.5}>Socials</Text>
+          <NavLink to='/about' text='About'/>
+          <NavLink to='/token' text='Token'/>
+          <NavLink to='/channel' text='Channel'/>
+          <NavLink to='/socials' text='Socials'/>
         </div>
       </div>
     </div>
