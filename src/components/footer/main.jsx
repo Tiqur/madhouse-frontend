@@ -1,4 +1,6 @@
 import styles from './styles.module.scss';
+import { Text } from '../index.js';
+import { BrowserRouter, Link } from 'react-router-dom';
 import {
   DiscordSvg, 
   InstaSvg, 
@@ -6,6 +8,14 @@ import {
   RedditSvg,
   TwitterSvg 
 } from '../../assets/index.js';
+
+const FLink = (props) => {
+  return (
+    <Link>
+      <Text>{props.text}</Text>
+    </Link>
+  )
+}
 
 const Icon = (props) => {
   return (
@@ -18,11 +28,19 @@ const Icon = (props) => {
 const Footer = () => {
   return (
     <div className={styles.container}>
-      <Icon icon={DiscordSvg} to=''/>
-      <Icon icon={RedditSvg} to=''/>
-      <Icon icon={TwitterSvg} to=''/>
-      <Icon icon={InstaSvg} to=''/>
-      <Icon icon={TelegramSvg} to=''/>
+      <div className={styles.socials}>
+        <Icon icon={DiscordSvg} to=''/>
+        <Icon icon={RedditSvg} to=''/>
+        <Icon icon={TwitterSvg} to=''/>
+        <Icon icon={InstaSvg} to=''/>
+        <Icon icon={TelegramSvg} to=''/>
+      </div>
+      <div className={styles.links}>
+        <BrowserRouter>
+          <FLink text='Terms of Service'/>
+          <FLink text='Privacy Policy'/>
+        </BrowserRouter>
+      </div>
     </div>
   )
 }
