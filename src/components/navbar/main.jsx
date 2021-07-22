@@ -19,8 +19,10 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.navbar}>
-        <img src={LogoPng} className={styles.logo} alt='logo'/>
-        <Text size={4}>Madhouse</Text>
+        <Link to={{pathname: '/'}} className={styles.nav_logo_container}>
+          <img src={LogoPng} className={styles.logo} alt='logo'/>
+          <Text size={4}>Madhouse</Text>
+        </Link>
         <div className={styles.links_container}>
           <NavLink to='/' text='Home'/>
           <NavLink to='/token' text='Token'/>
@@ -28,6 +30,7 @@ const Navbar = () => {
           <NavLink to='/socials' text='Socials'/>
         </div>
         <HamburgerMenu
+          className={styles.hamburgerMenu}
           isOpen={menuState}
           menuClicked={() => setMenuState(!menuState)}
           width={40}
