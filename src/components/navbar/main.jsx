@@ -2,6 +2,7 @@ import styles from './styles.module.scss';
 import { LogoPng } from '../../assets/index.js';
 import { Text } from '../index.js';
 import { Link } from 'react-router-dom';
+import HamburgerMenu from 'react-hamburger-menu';
 
 const NavLink = (props) => {
   return (
@@ -23,6 +24,13 @@ const Navbar = () => {
           <NavLink to='/channel' text='Channel'/>
           <NavLink to='/socials' text='Socials'/>
         </div>
+        <HamburgerMenu
+          isOpen={true}
+          menuClicked={false}
+          width={50}
+          strokeWidth={4}
+          color='#D7D7D7'
+        />
       </div>
     </div>
   )
