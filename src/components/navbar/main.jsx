@@ -3,6 +3,7 @@ import { LogoPng } from '../../assets/index.js';
 import { Text } from '../index.js';
 import { Link } from 'react-router-dom';
 import HamburgerMenu from 'react-hamburger-menu';
+import { useState } from 'react';
 
 const NavLink = (props) => {
   return (
@@ -13,6 +14,8 @@ const NavLink = (props) => {
 }
 
 const Navbar = () => {
+  const [menuState, setMenuState] = useState(false);
+
   return (
     <div className={styles.container}>
       <div className={styles.navbar}>
@@ -25,9 +28,9 @@ const Navbar = () => {
           <NavLink to='/socials' text='Socials'/>
         </div>
         <HamburgerMenu
-          isOpen={true}
-          menuClicked={false}
-          width={50}
+          isOpen={menuState}
+          menuClicked={() => setMenuState(!menuState)}
+          width={40}
           strokeWidth={4}
           color='#D7D7D7'
         />
