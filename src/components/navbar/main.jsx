@@ -35,8 +35,7 @@ const Navbar = () => {
           menuClicked={() => setMenuState(!menuState)}
           width={40}
           strokeWidth={4}
-          color='#D7D7D7'
-        />
+          color='#D7D7D7'/>
       </div>
     </div>
   )
