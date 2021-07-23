@@ -6,12 +6,6 @@
   height: 100%;
 }
 
-.hero_container {
-  display: flex;
-  justify-content: center;
-  width: 85%;
-}
-
 .coin {
   height: 20em;
 }
@@ -27,7 +21,6 @@
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  height: calc(100vh - 6em);
 
   // Mobile
   @media screen and (max-width: 1100px) {
