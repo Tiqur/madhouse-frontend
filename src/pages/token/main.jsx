@@ -1,5 +1,6 @@
 import styles from './styles.module.scss';
 import { Text, Button } from '../../components/index.js';
+import { SpinningCoinMP4 } from '../../assets/index.js';
 
 const TokenPage = () => {
   return (
@@ -16,7 +17,9 @@ const TokenPage = () => {
           </div>
         </div>
         <div className={styles.hero_content}>
-          <iframe width="512" height="288" src="https://www.youtube.com/embed/fylt8A_oL60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <video autoPlay loop muted className={styles.coin} id='video'>
+            <source src={SpinningCoinMP4} type='video/mp4'/>
+          </video>
         </div>
       </div>
     </div>

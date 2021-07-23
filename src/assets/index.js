@@ -8,3 +8,4 @@ export {ReactComponent as DropSvg} from './drop.svg';
 export {ReactComponent as MoneySvg} from './money.svg';
 export {ReactComponent as VaultSvg} from './vault.svg';
 export {default as LogoPng} from './logo.png';
+export {default as SpinningCoinMP4} from './spinning_coin.mp4';
