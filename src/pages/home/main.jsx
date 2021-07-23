@@ -1,10 +1,10 @@
 import styles from './styles.module.scss';
-import { Text, Button, Footer } from '../../components/index.js';
+import { Text, Button, Footer, Section } from '../../components/index.js';
 import { LogoPng } from '../../assets/index.js';
 
 const HomePage = () => {
   return (
-    <div className={styles.main_container}>
+    <Section>
       <div className={styles.hero_container}>
         <div className={styles.content, styles.hero}>
           <div className={styles.hero_info}>
@@ -21,7 +21,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Section>
   )
 }
 
