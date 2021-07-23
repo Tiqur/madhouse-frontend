@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className={styles.navbar}>
         <Link to={{pathname: '/'}} className={styles.nav_logo_container}>
           <img src={LogoPng} className={styles.logo} alt='logo'/>
-          <Text size={4}>Madhouse</Text>
+          <Text margin='0 0 0 0.2em' size={4}>Madhouse</Text>
         </Link>
         <div className={styles.links_container}>
           <NavLink to='/' text='Home'/>
