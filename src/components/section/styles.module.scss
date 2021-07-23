@@ -1,8 +1,14 @@
+.outer_section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid #7C7C7C;
+}
+
 .section {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: red;
-  padding: 4em 0 4em 0;
+  padding: 8em 0 8em 0;
   width: 85%;
 }
