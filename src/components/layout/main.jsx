@@ -7,8 +7,8 @@ const Layout = (props) => {
         <Navbar/>
           <div className={styles.innerContainer}>
             {props.children}
-          </div>
         <Footer/>
+          </div>
     </div>
   )
 }
