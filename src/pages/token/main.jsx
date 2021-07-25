@@ -34,10 +34,12 @@ const TokenPage = () => {
           </div>
         </div>
       </Section>
-      <Section className={styles.info_conatiner}>
-        <Icon src={DropSvg} info='Liquidity:' value='223,912'/>
-        <Icon src={MoneySvg} info='Market Cap:' value='$653,301'/>
-        <Icon src={VaultSvg} info='Supply:' value='1,000,000,000'/>
+      <Section>
+        <div className={styles.info_container}>
+          <Icon src={DropSvg} info='Liquidity:' value='223,912'/>
+          <Icon src={MoneySvg} info='Market Cap:' value='$653,301'/>
+          <Icon src={VaultSvg} info='Supply:' value='1,000,000,000'/>
+        </div>
       </Section>
     </div>
   )
